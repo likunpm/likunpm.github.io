@@ -1,11 +1,11 @@
 :root {
-  --bg: #0a192f;
-  --surface: #112240;
-  --line: rgba(136, 146, 176, 0.35);
-  --text: #ccd6f6;
-  --muted: #8892b0;
-  --accent: #64ffda;
-  --heading: #e6f1ff;
+  --bg: #ffffff;
+  --surface: #fafbfc;
+  --line: #e6eaf0;
+  --text: #1f2937;
+  --muted: #4b5563;
+  --accent: #2563eb;
+  --heading: #111827;
 }
 
 * {
@@ -18,10 +18,10 @@ html {
 
 body {
   margin: 0;
-  font-family: "Calibre", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.7;
+  line-height: 1.65;
 }
 
 a {
@@ -35,12 +35,12 @@ a:focus-visible {
 }
 
 .layout {
-  width: min(1120px, calc(100% - 48px));
+  width: min(1080px, calc(100% - 48px));
   margin: 0 auto;
   display: grid;
   grid-template-columns: 320px 1fr;
-  gap: 72px;
-  padding: 80px 0;
+  gap: 64px;
+  padding: 56px 0;
 }
 
 .sidebar {
@@ -52,7 +52,7 @@ a:focus-visible {
 .sidebar h1 {
   margin: 0;
   color: var(--heading);
-  font-size: clamp(2.2rem, 4vw, 2.8rem);
+  font-size: clamp(2rem, 4vw, 2.5rem);
   line-height: 1.05;
 }
 
@@ -63,14 +63,15 @@ a:focus-visible {
 }
 
 .intro {
-  margin: 18px 0 0;
+  margin: 12px 0 0;
   color: var(--muted);
+  font-size: 0.96rem;
 }
 
 nav {
-  margin-top: 32px;
+  margin-top: 26px;
   display: grid;
-  gap: 10px;
+  gap: 8px;
 }
 
 nav a {
@@ -87,7 +88,7 @@ nav a:focus-visible {
 }
 
 .socials {
-  margin: 30px 0 0;
+  margin: 26px 0 0;
   padding: 0;
   list-style: none;
   display: flex;
@@ -107,13 +108,13 @@ nav a:focus-visible {
 }
 
 .content section + section {
-  margin-top: 76px;
+  margin-top: 62px;
 }
 
 h2 {
   margin: 0 0 18px;
   color: var(--heading);
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   letter-spacing: 0.02em;
 }
 
@@ -136,7 +137,7 @@ p {
 
 .time {
   margin: 0;
-  color: var(--accent);
+  color: #6b7280;
   font-size: 0.88rem;
   font-weight: 600;
 }
@@ -163,8 +164,8 @@ h3 {
 
 .project-card:hover,
 .project-card:focus-visible {
-  transform: translateY(-2px);
-  border-color: var(--accent);
+  transform: translateY(-1px);
+  border-color: #cfd8e3;
   text-decoration: none;
 }
 
@@ -173,7 +174,7 @@ h3 {
   aspect-ratio: 16 / 10;
   object-fit: cover;
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid #e5e7eb;
 }
 
 .project-card p {
