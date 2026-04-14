@@ -108,7 +108,7 @@ nav a:focus-visible {
 }
 
 .content section + section {
-  margin-top: 62px;
+  margin-top: 48px;
 }
 
 h2 {
@@ -160,6 +160,7 @@ h3 {
   align-items: center;
   text-decoration: none;
   transition: transform 180ms ease, border-color 180ms ease;
+  min-height: 166px;
 }
 
 .project-card:hover,
@@ -179,15 +180,11 @@ h3 {
 
 .project-card p {
   margin: 0;
-}
-
-.project-card.no-image {
-  grid-template-columns: 1fr;
-  padding: 18px;
+  line-height: 1.5;
 }
 
 .subheading {
-  margin: 30px 0 10px;
+  margin: 20px 0 10px;
   font-size: 1.02rem;
   color: var(--heading);
 }
@@ -202,16 +199,33 @@ li + li {
   margin-top: 8px;
 }
 
-footer {
-  margin-top: 64px;
+.site-footer {
+  margin-top: 54px;
   padding-top: 20px;
   border-top: 1px solid var(--line);
 }
 
-footer p {
+.site-footer p {
   margin: 0;
   color: var(--muted);
   font-size: 0.92rem;
+}
+
+.domain-links {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.domain-links a {
+  color: var(--muted);
+}
+
+.domain-links a:hover,
+.domain-links a:focus-visible {
+  color: var(--accent);
 }
 
 @media (max-width: 900px) {
