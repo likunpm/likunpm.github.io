@@ -91,14 +91,14 @@ nav a:focus-visible {
   margin: 26px 0 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
+  display: grid;
+  gap: 10px;
 }
 
 .socials a {
   color: var(--muted);
   font-size: 0.95rem;
+  display: inline-block;
 }
 
 .socials a:hover,
@@ -179,6 +179,26 @@ h3 {
 
 .project-card p {
   margin: 0;
+}
+
+.subheading {
+  margin: 30px 0 10px;
+  font-size: 1.02rem;
+  color: var(--heading);
+}
+
+.package-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.package-list li {
+  margin-top: 10px;
+}
+
+.package-list span {
+  color: var(--muted);
+  margin-left: 6px;
 }
 
 ul {
