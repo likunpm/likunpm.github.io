@@ -181,24 +181,9 @@ h3 {
   margin: 0;
 }
 
-.subheading {
-  margin: 30px 0 10px;
-  font-size: 1.02rem;
-  color: var(--heading);
-}
-
-.package-list {
-  margin: 0;
-  padding-left: 18px;
-}
-
-.package-list li {
-  margin-top: 10px;
-}
-
-.package-list span {
-  color: var(--muted);
-  margin-left: 6px;
+.project-card.no-image {
+  grid-template-columns: 1fr;
+  padding: 18px;
 }
 
 ul {
