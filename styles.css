@@ -183,6 +183,10 @@ h3 {
   line-height: 1.5;
 }
 
+.project-card.no-image {
+  grid-template-columns: 1fr;
+}
+
 .subheading {
   margin: 20px 0 10px;
   font-size: 1.02rem;
