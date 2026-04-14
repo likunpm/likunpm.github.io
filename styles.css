@@ -47,6 +47,11 @@ a:focus-visible {
   position: sticky;
   top: 48px;
   height: fit-content;
+  background: linear-gradient(180deg, #fbfdff 0%, #f7faff 100%);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 22px 20px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
 }
 
 .sidebar h1 {
@@ -69,7 +74,7 @@ a:focus-visible {
 }
 
 nav {
-  margin-top: 26px;
+  margin-top: 22px;
   display: grid;
   gap: 8px;
 }
@@ -79,12 +84,15 @@ nav a {
   color: var(--muted);
   font-weight: 600;
   letter-spacing: 0.03em;
+  padding: 4px 2px;
+  border-radius: 6px;
 }
 
 nav a:hover,
 nav a:focus-visible {
   color: var(--accent);
   text-decoration: none;
+  background: rgba(37, 99, 235, 0.08);
 }
 
 .socials {
