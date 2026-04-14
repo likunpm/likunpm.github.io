@@ -3,143 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Likun PM | Digital Atelier</title>
+  <title>Likun PM</title>
   <meta
     name="description"
-    content="Likun PM 的艺术家风格个人主页：数字作品、AI 创作实践与个人档案。"
+    content="Likun PM 个人主页"
   >
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="ambient ambient-a" aria-hidden="true"></div>
-  <div class="ambient ambient-b" aria-hidden="true"></div>
-  <div class="grain" aria-hidden="true"></div>
-
-  <div class="page-shell" id="top">
-    <header class="site-header">
-      <a class="brand" href="#top">LIKUN<span>ATELIER</span></a>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="#manifesto">宣言</a>
-        <a href="#works">作品</a>
-        <a href="#practice">实践</a>
-        <a href="#contact">联系</a>
-      </nav>
+  <div class="container">
+    <header>
+      <h1>Likun PM</h1>
+      <p>个人主页</p>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Digital Artist / Creative Technologist</p>
-          <h1>我把代码当成画笔，把界面当作展墙。</h1>
-          <p class="hero-text">
-            我是 <strong>Likun PM</strong>，在 AI 与创意技术的交叉地带工作。
-            这个主页不是简历，而是一间在线工作室：记录我的实验、作品与长期母题。
-            你也可以通过 <strong>likun.pm</strong> 或 <strong>likun.chat</strong> 找到我。
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#works">进入画廊</a>
-            <a class="button button-secondary" href="https://github.com/likunpm" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal" aria-hidden="true">
-          <div class="orbit"></div>
-          <div class="visual-core">
-            <p>Studio Note</p>
-            <h2>Code + Light + Narrative</h2>
-          </div>
-          <div class="visual-chip chip-one">AI MEMORY</div>
-          <div class="visual-chip chip-two">LIVE SYSTEMS</div>
-        </div>
+      <section>
+        <h2>简介</h2>
+        <p>我在做 AI 产品、开发者工具和内容创作。</p>
       </section>
 
-      <section class="manifesto reveal" id="manifesto">
-        <p class="eyebrow">Manifesto</p>
-        <p>
-          我感兴趣的不是“把功能做出来”，而是把一种感受做出来。
-          我想做的产品，应该像一件可互动的作品：有节奏、有留白、有记忆点，
-          让人愿意再次回来，继续停留。
-        </p>
+      <section>
+        <h2>链接</h2>
+        <ul>
+          <li><a href="https://likun.pm" target="_blank" rel="noreferrer">likun.pm</a></li>
+          <li><a href="https://likun.chat" target="_blank" rel="noreferrer">likun.chat</a></li>
+          <li><a href="https://github.com/likunpm" target="_blank" rel="noreferrer">GitHub / likunpm</a></li>
+          <li><a href="https://pypi.org/user/likun2440/" target="_blank" rel="noreferrer">PyPI / likun2440</a></li>
+        </ul>
       </section>
 
-      <section class="section" id="works">
-        <div class="section-head">
-          <p class="eyebrow">Selected Works</p>
-          <h2>近期公开展出的数字作品。</h2>
-        </div>
-
-        <div class="works-grid">
-          <article class="work-card large reveal">
-            <p class="card-label">Product In Progress</p>
-            <h3>pmskill.ai</h3>
-            <p>正在打造中的 AI 产品，聚焦技能组织、效率增强与更自然的人机协作体验。</p>
-            <a href="https://pmskill.ai" target="_blank" rel="noreferrer">访问产品</a>
-          </article>
-
-          <article class="work-card reveal">
-            <p class="card-label">Personal Web Canvas</p>
-            <h3>likun.pm / likun.chat</h3>
-            <p>个人主页主入口与短域名入口，用于持续发布作品、动态与实验记录。</p>
-            <a href="https://likun.pm" target="_blank" rel="noreferrer">访问主页</a>
-          </article>
-
-          <article class="work-card reveal">
-            <p class="card-label">Open Source Profile</p>
-            <h3>PyPI @likun2440</h3>
-            <p>我的 Python 发布账号主页，集中展示可安装包与版本更新记录。</p>
-            <a href="https://pypi.org/user/likun2440/" target="_blank" rel="noreferrer">查看 PyPI</a>
-          </article>
-
-          <article class="work-card wide reveal">
-            <p class="card-label">Practice Keywords</p>
-            <h3>book.likun.pm · book.likun.ai</h3>
-            <p>正在写作中的两本书，记录产品方法与 AI 实践的长期思考。</p>
-            <a href="https://book.likun.pm" target="_blank" rel="noreferrer">阅读书稿</a>
-          </article>
-        </div>
+      <section>
+        <h2>在做的产品</h2>
+        <ul>
+          <li><a href="https://pmskill.ai" target="_blank" rel="noreferrer">pmskill.ai</a></li>
+        </ul>
       </section>
 
-      <section class="section" id="practice">
-        <div class="section-head">
-          <p class="eyebrow">Studio Practice</p>
-          <h2>我的工作流像一间小型工作室。</h2>
-        </div>
-        <div class="practice-grid">
-          <article class="reveal">
-            <h3>Collect</h3>
-            <p>采集碎片灵感、界面细节、视觉语法，建立自己的素材库。</p>
-          </article>
-          <article class="reveal">
-            <h3>Compose</h3>
-            <p>用代码做排版与节奏，把内容组织成可浏览、可互动的叙事。</p>
-          </article>
-          <article class="reveal">
-            <h3>Refine</h3>
-            <p>反复打磨可读性与气质，让作品既有态度，也有可用性。</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section contact-section" id="contact">
-        <div class="section-head">
-          <p class="eyebrow">Contact</p>
-          <h2>如果你想共创一件数字作品，我们可以聊聊。</h2>
-        </div>
-        <div class="contact-card reveal">
-          <p>欢迎合作：创意技术、AI 产品原型、交互叙事网页、开发者体验设计。</p>
-          <div class="contact-links">
-            <a href="https://github.com/likunpm" target="_blank" rel="noreferrer">@likunpm</a>
-            <a href="https://pypi.org/user/likun2440/" target="_blank" rel="noreferrer">PyPI / likun2440</a>
-            <a href="https://pmskill.ai" target="_blank" rel="noreferrer">pmskill.ai</a>
-            <a href="https://likun.pm" target="_blank" rel="noreferrer">likun.pm</a>
-            <a href="https://book.likun.pm" target="_blank" rel="noreferrer">book.likun.pm</a>
-            <a href="https://book.likun.ai" target="_blank" rel="noreferrer">book.likun.ai</a>
-          </div>
-        </div>
+      <section>
+        <h2>正在写的书</h2>
+        <ul>
+          <li><a href="https://book.likun.pm" target="_blank" rel="noreferrer">book.likun.pm</a></li>
+          <li><a href="https://book.likun.ai" target="_blank" rel="noreferrer">book.likun.ai</a></li>
+        </ul>
       </section>
     </main>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
