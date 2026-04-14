@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="t d">
+  <title id="t">llm-memory cover</title>
+  <desc id="d">Cover image for llm-memory package</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#4338ca"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect x="100" y="100" width="1000" height="550" rx="26" fill="#1f2937" opacity="0.55" stroke="#818cf8"/>
+  <g fill="none" stroke="#a5b4fc" stroke-width="3" opacity="0.8">
+    <path d="M220 240h220v120H220z"/>
+    <path d="M490 240h220v120H490z"/>
+    <path d="M760 240h220v120H760z"/>
+    <path d="M330 360v80h270"/>
+    <path d="M600 360v80h270"/>
+  </g>
+  <circle cx="330" cy="460" r="16" fill="#c7d2fe"/>
+  <circle cx="600" cy="460" r="16" fill="#c7d2fe"/>
+  <circle cx="870" cy="460" r="16" fill="#c7d2fe"/>
+  <text x="160" y="560" fill="#eef2ff" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="700">llm-memory</text>
+  <text x="160" y="602" fill="#c7d2fe" font-family="Arial, Helvetica, sans-serif" font-size="24">Memory layer for LLM applications</text>
+</svg>
