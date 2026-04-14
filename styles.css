@@ -215,26 +215,8 @@ li + li {
   font-size: 0.92rem;
 }
 
-.footer-topline {
-  margin-bottom: 12px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-}
-
-.footer-topline a {
-  color: var(--muted);
-  font-weight: 600;
-}
-
-.footer-topline a:hover,
-.footer-topline a:focus-visible {
-  color: var(--accent);
-}
-
-.domain-links {
-  margin-top: 0;
+.footer-inline {
+  margin: 0;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -244,12 +226,13 @@ li + li {
   padding-bottom: 2px;
 }
 
-.domain-links a {
+.footer-inline a {
   color: var(--muted);
+  font-weight: 600;
 }
 
-.domain-links a:hover,
-.domain-links a:focus-visible {
+.footer-inline a:hover,
+.footer-inline a:focus-visible {
   color: var(--accent);
 }
 
