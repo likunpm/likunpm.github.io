@@ -1,11 +1,13 @@
 :root {
-  --bg: #ffffff;
-  --surface: #fafbfc;
+  --bg: #f8f9fb;
+  --surface: #ffffff;
   --line: #e6eaf0;
   --text: #1f2937;
   --muted: #4b5563;
   --accent: #2563eb;
   --heading: #111827;
+  --subtitle: #374151;
+  --accent-bg: #eff6ff;
 }
 
 * {
@@ -18,10 +20,15 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
 }
 
 a {
@@ -53,13 +60,16 @@ a:focus-visible {
   margin: 0;
   color: var(--heading);
   font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 700;
   line-height: 1.05;
+  letter-spacing: -0.03em;
 }
 
 .subtitle {
   margin: 10px 0 0;
-  color: var(--accent);
+  color: var(--subtitle);
   font-weight: 600;
+  font-style: italic;
 }
 
 .intro {
@@ -77,8 +87,9 @@ nav {
 nav a {
   width: fit-content;
   color: var(--muted);
-  font-weight: 600;
-  letter-spacing: 0.03em;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
   transition: color 150ms ease;
 }
 
@@ -86,6 +97,10 @@ nav a:hover,
 nav a:focus-visible {
   color: var(--accent);
   text-decoration: none;
+}
+
+nav a.active {
+  color: var(--accent);
 }
 
 .socials {
@@ -115,8 +130,11 @@ nav a:focus-visible {
 h2 {
   margin: 0 0 18px;
   color: var(--heading);
-  font-size: 1.35rem;
-  letter-spacing: 0.02em;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  padding-left: 12px;
+  border-left: 3px solid var(--accent);
 }
 
 p {
@@ -138,15 +156,35 @@ p {
 
 .time {
   margin: 0;
-  color: #6b7280;
-  font-size: 0.88rem;
-  font-weight: 600;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  padding-top: 2px;
+}
+
+.time::before {
+  content: '';
+  flex-shrink: 0;
+  width: 7px;
+  height: 7px;
+  margin-top: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.5;
 }
 
 h3 {
   margin: 0 0 8px;
   color: var(--heading);
-  font-size: 1.08rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
 }
 
 .project-card {
@@ -160,14 +198,15 @@ h3 {
   gap: 18px;
   align-items: center;
   text-decoration: none;
-  transition: transform 180ms ease, border-color 180ms ease;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
   min-height: 166px;
 }
 
 .project-card:hover,
 .project-card:focus-visible {
-  transform: translateY(-1px);
-  border-color: #cfd8e3;
+  transform: translateY(-2px);
+  border-color: #b8c8e0;
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.08);
   text-decoration: none;
 }
 
@@ -176,7 +215,7 @@ h3 {
   aspect-ratio: 16 / 10;
   object-fit: cover;
   border-radius: 8px;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--line);
 }
 
 .project-card p {
@@ -189,9 +228,12 @@ h3 {
 }
 
 .subheading {
-  margin: 20px 0 10px;
-  font-size: 1.02rem;
-  color: var(--heading);
+  margin: 28px 0 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 
 ul {
@@ -202,6 +244,128 @@ ul {
 
 li + li {
   margin-top: 8px;
+}
+
+/* ── JD Card ─────────────────────────────────────────────── */
+
+.jd-card {
+  margin-top: 4px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  overflow: hidden;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+.jd-header {
+  padding: 22px 24px 20px;
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.jd-title {
+  margin: 0 0 10px;
+  color: var(--heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+.jd-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.jd-meta-dot {
+  color: var(--line);
+}
+
+.jd-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 9px;
+  border-radius: 99px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  background: #d1fae5;
+  color: #065f46;
+}
+
+@media (prefers-color-scheme: dark) {
+  .jd-badge {
+    background: rgba(16, 185, 129, 0.15);
+    color: #6ee7b7;
+  }
+}
+
+.jd-section {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.jd-section-title {
+  margin: 0 0 14px;
+  color: var(--heading);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.jd-list {
+  margin: 0;
+  padding-left: 22px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.jd-list li {
+  padding-left: 4px;
+}
+
+.jd-list li + li {
+  margin-top: 6px;
+}
+
+.jd-list li::marker {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.jd-apply {
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.jd-apply-text {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.jd-apply-btn {
+  color: var(--accent);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 150ms ease;
+}
+
+.jd-apply-btn:hover,
+.jd-apply-btn:focus-visible {
+  opacity: 0.7;
+  text-decoration: underline;
 }
 
 .wechat-block {
@@ -249,6 +413,30 @@ li + li {
   color: var(--accent);
 }
 
+/* ── Dark mode ──────────────────────────────────────────── */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --line: #30363d;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --accent: #58a6ff;
+    --heading: #f0f6fc;
+    --subtitle: #9ca3af;
+    --accent-bg: rgba(88, 166, 255, 0.1);
+  }
+
+  .project-card:hover,
+  .project-card:focus-visible {
+    border-color: #58a6ff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* ── Responsive ─────────────────────────────────────────── */
+
 @media (max-width: 900px) {
   .layout {
     width: calc(100% - 32px);
@@ -281,9 +469,14 @@ li + li {
 
   nav a:hover,
   nav a:focus-visible {
-    background: #eff6ff;
+    background: var(--accent-bg);
     border-color: var(--accent);
     text-decoration: none;
+  }
+
+  nav a.active {
+    background: var(--accent-bg);
+    border-color: var(--accent);
   }
 
   .project-card {
