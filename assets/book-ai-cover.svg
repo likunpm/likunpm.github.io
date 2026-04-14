@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="t d">
+  <title id="t">book.likun.ai cover</title>
+  <desc id="d">Unified cover for book.likun.ai</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#1b2340"/>
+      <stop offset="1" stop-color="#392b92"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <circle cx="980" cy="170" r="130" fill="#9f8bff" opacity="0.22"/>
+  <rect x="95" y="95" width="1010" height="560" rx="24" fill="#171e37" opacity="0.56" stroke="#8a8ff0"/>
+  <rect x="165" y="186" width="860" height="110" rx="14" fill="#2a3470" stroke="#9aa2ff"/>
+  <rect x="165" y="334" width="760" height="18" rx="9" fill="#b9c0ff" opacity="0.78"/>
+  <rect x="165" y="370" width="680" height="18" rx="9" fill="#b9c0ff" opacity="0.58"/>
+  <rect x="165" y="406" width="610" height="18" rx="9" fill="#b9c0ff" opacity="0.44"/>
+  <text x="195" y="254" fill="#eef0ff" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700">book.likun.ai</text>
+  <text x="165" y="560" fill="#e7e9ff" font-family="Arial, Helvetica, sans-serif" font-size="30">AI 学习手册</text>
+</svg>
