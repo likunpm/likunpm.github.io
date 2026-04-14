@@ -103,28 +103,13 @@ nav a.active {
   color: var(--accent);
 }
 
-.socials {
-  margin: 26px 0 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  gap: 10px;
-}
-
-.socials a {
-  color: var(--muted);
-  font-size: 0.95rem;
-  display: inline-block;
-}
-
-.socials a:hover,
-.socials a:focus-visible {
-  color: var(--accent);
-  text-decoration: none;
-}
 
 .content section + section {
   margin-top: 48px;
+}
+
+.content section > p:last-of-type {
+  margin-bottom: 0;
 }
 
 h2 {
@@ -234,6 +219,12 @@ h3 {
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--muted);
+}
+
+.timeline-item + .subheading {
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+  margin-top: 0;
 }
 
 ul {
