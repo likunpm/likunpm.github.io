@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">pmskill.ai cover</title>
+  <desc id="desc">Generated gradient cover for pmskill.ai</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0b1326"/>
+      <stop offset="1" stop-color="#1f3558"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#64ffda" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#64ffda" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <circle cx="950" cy="180" r="200" fill="#64ffda" opacity="0.18"/>
+  <circle cx="260" cy="620" r="180" fill="#3bc6ff" opacity="0.12"/>
+  <rect x="110" y="110" width="980" height="530" rx="24" fill="#112240" stroke="#2c466f"/>
+  <rect x="170" y="190" width="440" height="22" rx="11" fill="#2b4166"/>
+  <rect x="170" y="235" width="300" height="16" rx="8" fill="#29456f"/>
+  <rect x="170" y="268" width="380" height="16" rx="8" fill="#29456f"/>
+  <rect x="170" y="330" width="860" height="2" fill="url(#glow)"/>
+  <rect x="170" y="380" width="240" height="86" rx="14" fill="#173158" stroke="#355987"/>
+  <rect x="430" y="380" width="240" height="86" rx="14" fill="#173158" stroke="#355987"/>
+  <rect x="690" y="380" width="240" height="86" rx="14" fill="#173158" stroke="#355987"/>
+  <text x="170" y="575" fill="#64ffda" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700">pmskill.ai</text>
+  <text x="170" y="615" fill="#9ab4d3" font-family="Arial, Helvetica, sans-serif" font-size="24">AI Product in Progress</text>
+</svg>

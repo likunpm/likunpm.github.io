@@ -3,78 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Likun PM</title>
+  <title>Likun PM | Portfolio</title>
   <meta
     name="description"
-    content="Likun PM 个人主页"
+    content="Likun PM 的个人主页：产品、项目、写作与工作经历。"
   >
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <header>
+  <div class="layout">
+    <aside class="sidebar">
       <h1>Likun PM</h1>
-      <p>个人主页</p>
-    </header>
+      <p class="subtitle">Product Leader · AI Builder</p>
+      <p class="intro">聚焦内容生态、策略模型与大模型应用。正在构建 pmskill.ai，并持续写作。</p>
 
-    <main>
-      <section>
-        <h2>简介</h2>
-        <p>一个产品经理，聚焦内容、策略与大模型方向；目前在做 AI 产品、开发者工具和内容创作。</p>
+      <nav aria-label="页面导航">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <ul class="socials">
+        <li><a href="https://likun.pm" target="_blank" rel="noreferrer">likun.pm</a></li>
+        <li><a href="https://likun.chat" target="_blank" rel="noreferrer">likun.chat</a></li>
+        <li><a href="https://github.com/likunpm" target="_blank" rel="noreferrer">GitHub</a></li>
+        <li><a href="https://pypi.org/user/likun2440/" target="_blank" rel="noreferrer">PyPI</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <section id="about">
+        <h2>About</h2>
+        <p>我是一个产品经理，长期在内容、策略与 AI 的交叉领域工作。当前关注如何把大模型能力转化为可持续的产品体验。</p>
+        <p>现任 Keep 策略产品总监，曾在百度、字节、微博、欢聚时代、腾讯工作，兼顾产品设计、增长策略与系统化方法沉淀。</p>
       </section>
 
-      <section>
-        <h2>技能关键词</h2>
-        <ul>
-          <li>内容生态</li>
-          <li>策略模型</li>
-          <li>产品设计</li>
-        </ul>
+      <section id="experience">
+        <h2>Experience</h2>
+        <article class="timeline-item">
+          <p class="time">现在</p>
+          <div>
+            <h3>策略产品总监 · Keep</h3>
+            <p>负责策略产品方向，推动内容策略与 AI 能力在产品中的落地。</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <p class="time">过往</p>
+          <div>
+            <h3>百度 · 字节 · 微博 · 欢聚时代 · 腾讯</h3>
+            <p>经历过大公司与内容平台场景，沉淀了产品架构、策略建模和团队协同能力。</p>
+          </div>
+        </article>
       </section>
 
-      <section>
-        <h2>教育经历</h2>
-        <ul>
-          <li>宁夏固原市第一中学（宏志班，2007 级）</li>
-          <li>西安北雷男子电子专修学院（学士，2010 级）</li>
-        </ul>
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <a class="project-card" href="https://pmskill.ai" target="_blank" rel="noreferrer">
+          <img src="./assets/pmskill-cover.svg" alt="pmskill.ai 项目封面">
+          <div>
+            <h3>pmskill.ai</h3>
+            <p>正在开发的 AI 产品，目标是提升个人与团队的知识组织和行动效率。</p>
+          </div>
+        </a>
+
+        <a class="project-card" href="https://book.likun.pm" target="_blank" rel="noreferrer">
+          <img src="https://book.likun.pm/~gitbook/ogimage/-MabAkcFdWbi2x_jNry2" alt="book.likun.pm 封面">
+          <div>
+            <h3>book.likun.pm</h3>
+            <p>产品与实践写作，系统记录方法论和经验沉淀。</p>
+          </div>
+        </a>
+
+        <a class="project-card" href="https://book.likun.ai" target="_blank" rel="noreferrer">
+          <img src="https://book.likun.ai/~gitbook/ogimage/SgT51Vll3P3ELZi5X6BE" alt="book.likun.ai 封面">
+          <div>
+            <h3>book.likun.ai</h3>
+            <p>AI 方向写作，聚焦模型能力、产品化路径与案例分析。</p>
+          </div>
+        </a>
       </section>
 
-      <section>
-        <h2>工作经历</h2>
-        <ul>
-          <li>现：Keep，策略产品总监</li>
-          <li>原：百度、字节、微博、欢聚时代、腾讯</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>链接</h2>
-        <ul>
-          <li><a href="https://likun.pm" target="_blank" rel="noreferrer">likun.pm</a>：个人官网主站。</li>
-          <li><a href="https://likun.chat" target="_blank" rel="noreferrer">likun.chat</a>：个人短域名入口。</li>
-          <li><a href="https://github.com/likunpm" target="_blank" rel="noreferrer">GitHub / likunpm</a>：代码仓库与开源项目主页。</li>
-          <li><a href="https://pypi.org/user/likun2440/" target="_blank" rel="noreferrer">PyPI / likun2440</a>：Python 包发布账号页面。</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>在做的产品</h2>
-        <ul>
-          <li><a href="https://pmskill.ai" target="_blank" rel="noreferrer">pmskill.ai</a>：正在开发的 AI 产品。</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>正在写的书</h2>
+      <section id="writing">
+        <h2>Writing</h2>
         <ul>
           <li><a href="https://book.likun.pm" target="_blank" rel="noreferrer">book.likun.pm</a>：产品与实践写作。</li>
           <li><a href="https://book.likun.ai" target="_blank" rel="noreferrer">book.likun.ai</a>：AI 方向写作。</li>
         </ul>
       </section>
 
-      <section>
-        <h2>联系方式</h2>
+      <section id="contact">
+        <h2>Contact</h2>
         <ul>
           <li>邮箱：<a href="mailto:likun2440@126.com">likun2440@126.com</a></li>
           <li>QQ：46163936</li>
