@@ -203,6 +203,18 @@ li + li {
   margin-top: 8px;
 }
 
+.wechat-block {
+  margin-top: 10px;
+}
+
+.wechat-block img {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
 .site-footer {
   margin-top: 54px;
   padding-top: 20px;
