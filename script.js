@@ -1,5 +1,5 @@
 // Change this password to your own value.
-const PRIVATE_PASSWORD = "likun-private";
+const PRIVATE_PASSWORD = "likun110";
 const ACCESS_KEY = "likun_private_access_granted";
 
 function askForPassword() {
