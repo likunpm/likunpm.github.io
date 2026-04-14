@@ -79,6 +79,7 @@ nav a {
   color: var(--muted);
   font-weight: 600;
   letter-spacing: 0.03em;
+  transition: color 150ms ease;
 }
 
 nav a:hover,
@@ -250,14 +251,16 @@ li + li {
 
 @media (max-width: 900px) {
   .layout {
-    width: calc(100% - 30px);
+    width: calc(100% - 32px);
     grid-template-columns: 1fr;
-    gap: 44px;
-    padding: 34px 0 56px;
+    gap: 32px;
+    padding: 28px 0 48px;
   }
 
   .sidebar {
     position: static;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--line);
   }
 
   nav {
@@ -265,18 +268,130 @@ li + li {
     gap: 8px;
   }
 
+  nav a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 9px 6px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    font-size: 0.9rem;
+  }
+
+  nav a:hover,
+  nav a:focus-visible {
+    background: #eff6ff;
+    border-color: var(--accent);
+    text-decoration: none;
+  }
+
   .project-card {
     grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .project-card img {
+    width: 100%;
+    max-height: 160px;
+    object-fit: cover;
+  }
+
+  .content section + section {
+    margin-top: 40px;
   }
 }
 
 @media (max-width: 600px) {
+  .layout {
+    width: calc(100% - 28px);
+    gap: 28px;
+    padding: 24px 0 40px;
+  }
+
   nav {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .timeline-item {
     grid-template-columns: 1fr;
-    gap: 6px;
+    gap: 4px;
+  }
+
+  .time {
+    font-size: 0.82rem;
+  }
+
+  .project-card {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .footer-inline {
+    flex-wrap: wrap;
+    white-space: normal;
+    gap: 6px 8px;
+  }
+
+  .content section + section {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .layout {
+    width: calc(100% - 24px);
+    gap: 24px;
+    padding: 20px 0 36px;
+  }
+
+  .sidebar h1 {
+    font-size: 1.85rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .intro {
+    font-size: 0.9rem;
+  }
+
+  nav {
+    margin-top: 18px;
+    gap: 7px;
+  }
+
+  nav a {
+    padding: 8px 4px;
+    font-size: 0.85rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 14px;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .project-card {
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+  }
+
+  .project-card img {
+    max-height: 140px;
+    border-radius: 6px;
+  }
+
+  .site-footer {
+    margin-top: 36px;
+  }
+
+  .wechat-block img {
+    width: 150px;
   }
 }
